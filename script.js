@@ -1,4 +1,8 @@
-const APIKey = "41d8590a562670c6c5f42f01af3d1978";
+// const config = require('./config');
+// const APIKey = config.apiKey;
+// script.js
+import { apiKey } from './config.js';
+const APIKey = apiKey;
 const URL = `https://api.openweathermap.org/data/2.5/weather?units=metric&q=`;
 const cityInput = document.querySelector('#searchBar')
 const searchBtn = document.querySelector('#searchBtn')
@@ -17,7 +21,7 @@ async function main(city) {
             hide.style.display = 'none';
             weather.style.display = 'flex';
             var data = await response.json();
-            console.log(data);
+            // console.log(data);
     temp.innerHTML = Math.floor(data.main.temp) + "<sup>&deg;C</sup>";
     humidity.innerHTML = Math.floor(data.main.humidity);
     wind.innerHTML = Math.floor(data.wind.speed);
