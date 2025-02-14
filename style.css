@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "IBM Plex Mono", serif;
+    box-sizing: border-box;
+}
+#main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    background-color: #0c0b0ea7;
+}
+#container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
+    background-color: rgba(0, 255, 255, 0.685);
+    color: #fff;
+    height: 85vh;
+    width: 26vw;
+    padding: 20px;
+    border-bottom-right-radius: 100%;
+    border-bottom-left-radius: 100%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    box-shadow: 3px 0px 10px rgba(0, 0, 0, 0.1);
+}
+#hide{
+    width: 99%;
+    height: 70%;
+    display: flex;
+    margin: 0;
+    color: #3e3c42b7;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+#weather{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    display: none;
+}
+#searchBar{
+    color: #0c0b0e96;
+    font-weight: 500;
+    font-size: 13px;
+    width: 90%;
+    border: none;
+    border-radius: 10px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    outline: none;
+    padding: 10px;
+}
+#search{
+display: flex;
+border-radius: 10px;
+}
+#search:hover{
+    outline: 2px dotted rgb(255, 255, 0);
+}
+#searchBtn{
+    width: 40px;
+    object-fit: contain;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    background-color: #ffffff;
+}
+#tempDiv{
+    font-weight: 900;
+    position: relative;
+    top: -10px;
+    line-height: 20px;
+    font-size: 2.4rem;
+    margin-left: 20px;
+}
+#tempDiv sup{
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+#cityName{
+    font-size: 1.5rem;
+    font-weight: 900;
+    text-align: center;
+    text-shadow: #140f0f65 0px 2px 10px;
+}
+#card{
+    display: flex;
+    margin-top: 15px;
+    align-items: center;
+    width: 100px;
+    gap: 10px;
+}
+#icon{
+    width: 30px;
+    height: 35px;
+    object-fit: contain;
+}
+#text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#humidityP{
+    font-weight: 700;
+    font-size: 16px;
+    text-shadow: #140f0f65 0px 2px 10px;
+}
+#humidityText{
+    text-shadow: #140f0f65 0px 2px 10px;
+    font-size: 13px;
+    font-weight: 500;
+    position: relative;
+    top: -3px;
+}
+#windK{
+    font-weight: 600;
+    font-size: 16px;
+    text-shadow: #140f0f65 0px 2px 10px;
+}
+#windText{
+    text-shadow: #140f0f65 0px 2px 10px;
+    font-size: 13px;
+    font-weight: 500;
+    position: relative;
+    top: -3px;
+}
+@media (max-width: 1100px){
+    #container{
+        width: 60vw;
+    }
+}
+@media (max-width: 600px){
+    #container{
+        width: 80vw;
+        height: 75vh;
+    }
+}

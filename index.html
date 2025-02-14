@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather APP</title>
+    <link rel="stylesheet" href="/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <main id="main">
+      <div id="container">
+        <div id="search">
+          <input type="text" id="searchBar" placeholder="Search for a city" />
+          <button id="searchBtn">
+            <img width="20px" src="/images/search.png" alt="Search" />
+          </button>
+        </div>
+        <div id="hide">
+            <img src="/images/search.png" alt="">
+            <h2 id="mainText">Search your city..</h2>
+        </div>
+        <div id="weather">
+        <div id="cloudIcon">
+          <img src="/images/clear.png" width="170px" id="weatherIcon" alt="Weather icon" />
+        </div>
+        <div id="tempDiv"><span id="temp"></span></div>
+        <div id="cityName">Invalid city name entered</div>
+        <div id="card">
+          <div class="icon">
+            <img src="/images/humidity.png" width="30px" alt="Humidity" />
+          </div>
+          <div class="text">
+            <div id="humidityP"><span id="humidity"></span>%</div>
+            <span id="humidityText">Humidity</span>
+          </div>
+        </div>
+        <div id="card">
+          <div class="icon">
+            <img src="/images/wind.png" width="30px" alt="Humidity" />
+          </div>
+          <div class="text">
+            <div id="windK"><span id="wind"></span>Km/Hr</div>
+            <span id="windText">WindSpeed</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    </main>
+    <script src="/script.js"></script>
+  </body>
+</html>
